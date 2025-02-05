@@ -1,2 +1,0 @@
-name = Git 
-date = dec -14-2023 ;

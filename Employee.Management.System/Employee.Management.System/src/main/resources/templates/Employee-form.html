@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Employee form</title>
+<link th:href="@{css/EmployeeForm.css}" rel="stylesheet" >
+</head>
+<body>
+    <fieldset>
+    <legend>
+        <h2>
+        Employee ADD/UPDATE Form 
+        </h2>
+    </legend>
+<br>
+<form action="#" th:action="@{/save}" th:object="${employee}" method=post>
+	<input type="hidden" th:field="*{id}" >
+    FirstName : <input type="text" th:field="*{firstName}" placeholder="First Name">  <br> <br>
+    
+    LastName  : <input type="text" th:field="*{lastName}" placeholder="Last Name"><br><br>
+    
+    Email : <input type="text" th:field="*{email}" placeholder="Email"><br><br>
+    <input type="submit">
+</form>
+
+    </fieldset>
+
+</body>
+
+</html>

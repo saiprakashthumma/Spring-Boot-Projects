@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Employee List</title>
+</head>
+<link rel="stylesheet" th:href="@{css/listEmployee.css}">
+<body>
+    
+    <h2>List Of Employees</h2>
+    <a th:href="@{/employeeForm}"> <button>Add Employee</button></a>
+<br><br>
+<table>
+<thead>   
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>    
+        <th>Actions</th>    
+    </tr>
+</thead>
+<tbody>
+    <tr th:each="emp:${employees}">
+        <td th:text="${emp.firstName}"></td>
+        <td th:text="${emp.lastName}"></td>
+        <td th:text="${emp.email}"></td>
+        <td>
+            <a th:href="@{/updateEmployee(employeeId=${emp.id})}">
+            <button>Update</button>
+            </a>
+            <a th:href="@{/deleteEmployee(employeeId=${emp.id})}" 
+            onclick="if(!(confirm('are you sure want to delete this employee'))) return false" >
+            <button id="delete">Delete</button>
+            </a>
+        </td>
+    </tr>
+</tbody>
+
+</table>
+
+</body>
+</html>

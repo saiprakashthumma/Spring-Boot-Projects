@@ -1,0 +1,51 @@
+h2 {
+    margin-left: 400px;
+    margin-top: 30px;
+ 
+}
+button {
+    color: rgb(236, 236, 236);
+    background-color: green;
+    text-align: center;
+    border-radius: 5px;
+
+	margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    
+    cursor: pointer;   
+
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    
+     background-color: rgba(231, 107, 244, 0.838);
+    color: rgb(0, 0, 0);  
+}
+
+td {
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+
+#delete {
+ background-color: rgb(244, 3, 3);
+  color: rgb(236, 236, 236);
